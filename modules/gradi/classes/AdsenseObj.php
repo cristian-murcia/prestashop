@@ -28,7 +28,7 @@ class AdsenseObj extends ObjectModel {
 
     //Metodo para traer todos los registros filtrados
     public static function getBanners() {
-        $sql = "SELECT * FROM `ps_gradiadsense` WHERE `switch` = 'desabled'";
+        $sql = "SELECT * FROM `ps_gradiadsense` WHERE `switch` = 'enable'";
         $banners = Db::getInstance()->executeS($sql);
         return $banners;
     }

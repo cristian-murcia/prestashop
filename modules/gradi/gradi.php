@@ -61,7 +61,7 @@ class Gradi extends Module {
                     $allowed = array('image/gif', 'image/jpeg', 'image/jpg', 'image/png');
                     if (in_array($imagen['type'], $allowed)) {
                         $path = '../upload/';
-                        $copy = ImageManager::resize($imagen['tmp_name'], $path . time() . $imagen['name'], 1114, 213);
+                        $copy = ImageManager::resize($imagen['tmp_name'], $path . time() . $imagen['name']);
                         if ($copy) {
                             $id_GradiAdsense = 0;
                             $title = Tools::getValue('title');
@@ -89,7 +89,7 @@ class Gradi extends Module {
                     $this->context->smarty->assign('errorForm', '¡Hey! La imagen es de formato invalido');
                 }
             } else {
-                $this->context->smarty->assign('errorForm', '¡Hey! La imagen es de formato invalido');
+                $this->context->smarty->assign('errorForm', '¡Hey! La imagen es requerida');
             }
         }
     }
@@ -132,6 +132,7 @@ class Gradi extends Module {
         $banners = AdsenseObj::getBanners();
         $this->context->smarty->assign('banners', $banners);
 
+        $this->context->controller->addCSS($this->_path.'views/css/frontend.css', 'all');
         $this->context->controller->addJQuery(array(
             $this->_path . 'views/js/jquery-3.5.1.min.js'
         ));

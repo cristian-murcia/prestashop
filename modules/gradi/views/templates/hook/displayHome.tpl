@@ -14,48 +14,46 @@
 
 
 <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+    {if $banners != null}
+        <div class="container container-obj">
+            <div id="myCarousel" class="carousel slide slide-obj" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    {foreach $banners key=b item=banner}
+                        <li data-target="#myCarousel" data-slide-to="{$b}" class="{if $b == 0}active{/if}"></li>
+                        {/foreach}
+                </ol>
 
-    <div class="container">
-        <h2>Carousel Example</h2>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                {foreach from=$banners item=banner}
-                    <li data-target="#myCarousel" data-slide-to="{$banner.id_GradiAdsense}" class="active"></li>
-                    {/foreach}
-            </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    {foreach $banners key=b item=banner}
+                        <div class="item {if $b == 0}active{/if}">
+                            <img id="img-obj" src="{$banner.image}" alt="{$banner.label}">
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                {foreach from=$banners item=banner}
-                    <div class="item active">
-                        
-                        <img src="{$banner.image}" alt="Los Angeles" style="width:100%; height: 100%;">
-                        <div class="carousel-caption">
-                            <h3>Los Angeles</h3>
-                            <p>LA is always so much fun!</p>
+                            <div class="carousel-caption">
+                                <h3 id="title-obj">{$banner.title}</h3>
+                                <p  id="description-obj">{$banner.description}</p>
+                                <a  id="url-obj" href="{$banner.url}" >¡A por ello tio!</a>
+                            </div>
                         </div>
-                    </div>
-                {/foreach}
-            </div>
+                    {/foreach}
+                </div>
 
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
-    </div>
+    {/if}
 </body>

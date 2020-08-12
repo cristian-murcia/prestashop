@@ -1,0 +1,34 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12/08/2020, 01:01:54 PM
+    Author     : Cristian Guzman
+*/
+
+.slide-obj{
+    height: 213px;
+    width: 100%;
+}
+
+
+#img-obj{
+    max-height: 210px;
+    min-height: 210px;
+    max-width: 70%;
+    min-width: 100%;
+}
+
+#title-obj{
+    font-family: Impact, Charcoal, sans-serif;
+    color: #0033cc;
+}
+
+#description-obj{
+    font-size: 20px;
+    color: #6666ff;
+    font-family: Impact, Charcoal, sans-serif;
+}
+

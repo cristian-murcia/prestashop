@@ -65,7 +65,7 @@
             </form> 
             <form method="post">
                 <input style="display: none" name="id_gradi" id="id_gradi" type="text" value="{$banner.id_GradiAdsense}"/>
-                <td><input class="btn btn-danger" type="submit" value="Borrar" name="borrarBanner" id="borrarBanner" /></td>
+                <td><input class="btn btn-danger" type="submit" value="Delete" name="borrarBanner" id="borrarBanner" /></td>
             </form>
             </tr>
         {/foreach}
