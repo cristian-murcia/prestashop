@@ -1176,7 +1176,7 @@ class AdminContainer extends Container
                 52 => 'welcome',
                 53 => 'blockreassurance',
                 54 => 'ps_facetedsearch',
-                55 => 'GradiAdsense',
+                55 => 'gradi',
             ],
             'ps_cache_dir' => 'C:\\wamp64\\www\\prestashop/var/cache/prod\\',
             'mail_themes_uri' => '/mails/themes',
