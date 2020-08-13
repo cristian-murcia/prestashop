@@ -1,0 +1,12 @@
+DATOS IMPORTANTES
+
+--Datos de admin de la tienda
+url = http://localhost/prestashop/admin751ecrjcw/
+admin = djcrissguzman@gmail.com 
+password = 12345678
+
+--Datos de usuario de base de datos
+puerto: 3308
+gestor: mysql
+user: root
+password: 12345678

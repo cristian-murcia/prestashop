@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-08-12 18:56:48
+/* Smarty version 3.1.33, created on 2020-08-12 19:55:03
   from 'C:\wamp64\www\prestashop\modules\gradi\views\templates\hook\displayHome.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f3481c0d7b5b5_01579380',
+  'unifunc' => 'content_5f348f67154b62_53530156',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '61b12e0a05f1187fa763ebe5a58f8fbcc654d71c' => 
     array (
       0 => 'C:\\wamp64\\www\\prestashop\\modules\\gradi\\views\\templates\\hook\\displayHome.tpl',
-      1 => 1597276480,
+      1 => 1597279961,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f3481c0d7b5b5_01579380 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f348f67154b62_53530156 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <head>

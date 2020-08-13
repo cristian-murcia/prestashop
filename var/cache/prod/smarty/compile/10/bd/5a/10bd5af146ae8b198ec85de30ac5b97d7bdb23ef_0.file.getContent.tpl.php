@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-08-12 18:56:14
+/* Smarty version 3.1.33, created on 2020-08-12 19:54:42
   from 'C:\wamp64\www\prestashop\modules\gradi\views\templates\hook\getContent.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f34819e94a6e3_06640419',
+  'unifunc' => 'content_5f348f52ab59c0_87741529',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '10bd5af146ae8b198ec85de30ac5b97d7bdb23ef' => 
     array (
       0 => 'C:\\wamp64\\www\\prestashop\\modules\\gradi\\views\\templates\\hook\\getContent.tpl',
-      1 => 1597266927,
+      1 => 1597279961,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f34819e94a6e3_06640419 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f348f52ab59c0_87741529 (Smarty_Internal_Template $_smarty_tpl) {
 if (isset($_smarty_tpl->tpl_vars['savedForm']->value)) {?>
     <div class="alert alert-success"><?php echo $_smarty_tpl->tpl_vars['savedForm']->value;?>
 </div>
