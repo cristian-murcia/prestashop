@@ -1,0 +1,60 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25/08/2020, 11:17:30 PM
+    Author     : Cristian Guzman
+*/
+
+.registrarForWapp {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: #000000;
+    background: #FFCC00;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.registrarForWapp:hover {
+    background: #fcdc5b;
+    text-decoration: none;
+}
+
+.h-color{
+    text-align: center;
+    height: 60px;   
+    background: rgba(9, 135, 175, 1);
+}
+
+.h-color h3{
+    margin-top: 0px;
+}
+
+.text-title-color{
+    color: white;
+}
+
+section label, .label-color {
+    font-size: 15px;
+}
+
+.button-color{
+    background-color: #4d535a;
+    color: white;#fc0;
+}
+
+.button-color2{
+    border-color: #fc0;
+    background-color: #fc0;;
+    color: white;
+}
+
+.md-login{
+    width: 200px;
+}
+
+

@@ -1198,6 +1198,7 @@ class FrontContainer extends Container
                 53 => 'blockreassurance',
                 54 => 'ps_facetedsearch',
                 55 => 'gradi',
+                56 => 'consumoRest',
             ],
             'ps_cache_dir' => 'C:\\wamp64\\www\\prestashop/var/cache/prod\\',
             'mail_themes_uri' => '/mails/themes',
